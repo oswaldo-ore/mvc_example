@@ -22,6 +22,7 @@
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="/mvc/">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="/mvc/genero">Genero</a></li>
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="/mvc/pelicula">Película</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/mvc/notaAlquila">Nota Alquila</a></li>
                 </ul>
             </div>
         </div>

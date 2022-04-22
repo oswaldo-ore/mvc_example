@@ -28,6 +28,8 @@ class App
 
             if (isset($url[1])) {
                 $controller->{$url[1]}();
+                unset($_POST);
+                $_POST = array();
             } else {
                 $controller->listar();
             }
