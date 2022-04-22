@@ -30,8 +30,8 @@ class NotaAlquilaModel
             $stmt->bindParam(":direccion", $direccion);
             $stmt->bindParam(":dias", $dias);
             $stmt->execute();
-            foreach ($listaPeliculaId as $key => $pelicula_id) {
-                $result = $this->detalleAlquilaModel->save($nro, $pelicula_id);
+            foreach ($listaPeliculaId as $key => $pelicula) {
+                $result = $this->detalleAlquilaModel->save($nro, $pelicula["pelicula_id"]);
             }
             return "Nota de alquiler guardado correctamente";
         } catch (\Throwable $th) {

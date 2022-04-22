@@ -243,6 +243,8 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script>
+        var i = 0;
+
         function agregarCarrito(index) {
             var pelicula = document.getElementById(index);
             codigo = pelicula.getElementsByTagName("td")[0].innerHTML;
@@ -251,8 +253,9 @@
             accion = "hola";
             row = '<tr><td>' + codigo + '</td> <td>' + titulo + '</td> <td>' + duracion + '</td> <td>' + accion + '</td> </tr>';
             $("#lista-alquiler").append(row);
-            inputForm = '<input type="hidden" name="detalleAlquila[]" value="' + codigo + '">';
+            inputForm = '<input type="hidden" name="detalleAlquila[' + i + '][pelicula_id]" value="' + codigo + '">';
             $("#detalles").append(inputForm);
+            i = i + 1;
         }
     </script>
 </body>
